@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <base href="./" />
+    <link type="text/css" rel="stylesheet" href="assets/global.css">
+</head>
+<body>
+    <research-app class="test-app">
+        <div class="app-loading">
+            <div class="loading-icon"></div>
+            <div class="loading-text"> Loading...</div>
+        </div>
+    </research-app>
+  
+    <script>
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+
+  <!-- dev --
+    <script src="node_modules\zone.js\dist\zone.js"></script>
+    <script src="node_modules\reflect-metadata\Reflect.js"></script>
+    <script src="node_modules\es6-shim\es6-shim.js"></script>
+    <script src="node_modules\tslib\tslib.js"></script>
+
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    <script src="build-tools/systemjs-config.js"></script>
+    <script>
+        System.import('dist-dev/rxjs.js').then(function () {
+            System.import('app/main');
+        });
+    </script>
+  -- end-dev -->
+
+  <!-- prod -->
+  
+    <script>
+        var module = {};
+    </script>
+    <script src="common.min.js"></script>
+    <script src="app.min.js"></script>
+
+   <!-- end-prod -->
+</body>
+</html>
